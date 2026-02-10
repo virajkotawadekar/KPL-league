@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <title>KPL Kabaddi League Registration</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #020617;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 { color: #facc15; }
+    form {
+      max-width: 420px;
+      margin: auto;
+      background: #0f172a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, button {
+      width: 92%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: none;
+      font-size: 15px;
+    }
+    button {
+      background: #facc15;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .pay {
+      background: #22c55e;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🏆 KPL Kabaddi League</h1>
+<p>Registration (Payment Mandatory)</p>
+
+<a href="https://rzp.io/l/PUT_PAYMENT_LINK" target="_blank">
+  <button class="pay">💳 Pay Registration Fee First</button>
+</a>
+
+<form action="https://formspree.io/f/PUT_YOUR_FORM_ID" method="POST">
+
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="tel" name="mobile" placeholder="Mobile Number" required>
+  <input type="text" name="team" placeholder="Team Name" required>
+  <input type="email" name="email" placeholder="Email ID" required>
+
+  <input type="text" name="transaction_id"
+         placeholder="Enter Payment Transaction ID" required>
+
+  <button type="submit">✅ Submit Registration</button>
+</form>
+
+<p style="font-size:13px;color:#cbd5f5">
+Payment केल्याशिवाय entry valid नाही
+</p>
+
+</body>
+</html>
